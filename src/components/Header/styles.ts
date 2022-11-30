@@ -1,8 +1,18 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
-  background: #fff;
-  padding: 2.5em 0 7.5rem;
+  background: #69a5a4;
+  padding: 2rem 0;
+  figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    strong {
+      font-size: 1.5rem;
+      color: #f2f2f2;
+      margin-left: 0.5rem;
+    }
+  }
 `
 
 export const HeaderContent = styled.div`
@@ -14,4 +24,19 @@ export const HeaderContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  ul {
+    display: flex;
+  }
+  li {
+    list-style: none;
+    margin-left: 1.5rem;
+    a {
+      color: #f2f2f2;
+      text-decoration: none;
+      font-size: 1.2rem;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 `
