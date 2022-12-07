@@ -11,14 +11,14 @@ export function MegaSena() {
       return numeros.sort((n1: any, n2: any) => n1 - n2)
     }
 
-    const numeroAleatorio = parseInt(Math.random() * 60) + 1
+    const numeroAleatorio = Math.floor(Math.random() * 60) + 1
     if (!numeros.includes(numeroAleatorio)) {
       return mega(qtde, [...numeros, numeroAleatorio])
     } else {
       return mega(qtde, numeros)
     }
   }
-  const [qtde, serQtde] = useState(6)
+  const [qtde, serQtde] = useState<any>(6)
   const [numeros, setNumeros] = useState(mega(qtde))
 
   return (
