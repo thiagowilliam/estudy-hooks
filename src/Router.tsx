@@ -4,6 +4,8 @@ import { Route, Routes } from 'react-router-dom'
 const DefaultLayout = lazy(() => import('./layouts/DefaultLyout'))
 const UseStateHook = lazy(() => import('./pages/UseState'))
 const UseEffectHook = lazy(() => import('./pages/UseEffect'))
+const UseRefHook = lazy(() => import('./pages/UseRef'))
+const UseContextHook = lazy(() => import('./pages/UseContext'))
 
 export function Router() {
   return (
@@ -22,6 +24,23 @@ export function Router() {
           element={
             <Suspense fallback={<div>Loading...</div>}>
               <UseEffectHook />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/useRef"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <UseRefHook />
+            </Suspense>
+          }
+        />
+
+        <Route
+          path="/useContext"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <UseContextHook />
             </Suspense>
           }
         />

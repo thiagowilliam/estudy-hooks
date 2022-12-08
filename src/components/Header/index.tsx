@@ -18,6 +18,12 @@ export function Header() {
           <li>
             <Link to="/useEffect">UseEffect</Link>
           </li>
+          <li>
+            <Link to="/useRef">UseRef</Link>
+          </li>
+          <li>
+            <Link to="/useContext">UseContext</Link>
+          </li>
         </ul>
       </S.HeaderContent>
     </S.HeaderContainer>
