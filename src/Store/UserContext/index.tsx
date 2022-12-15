@@ -26,6 +26,8 @@ export const UserContextProvider = ({
 
   const updateUser = (data: Partial<User>) => {
     setUser((prev) => ({ ...prev, ...data }))
+
+    console.log('dados context', data)
   }
 
   return (

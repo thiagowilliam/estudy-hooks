@@ -24,6 +24,9 @@ export function Header() {
           <li>
             <Link to="/useContext">UseContext</Link>
           </li>
+          <li>
+            <Link to="/useReducer">UseReducer</Link>
+          </li>
         </ul>
       </S.HeaderContent>
     </S.HeaderContainer>

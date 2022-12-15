@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { UserContext } from '../../Store/UserContext'
+import { UserContext } from '../../../Store/UserContext'
 
 export function ScoreCard() {
   const context = useContext(UserContext)
